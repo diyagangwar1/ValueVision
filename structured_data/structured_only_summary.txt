@@ -1,0 +1,43 @@
+Structured-Only Price Prediction Summary (Baseline)
+---------------------------------------------------
+
+This file documents the methodology and results for our structured-only baseline model
+in the ValueVision project. This experiment serves as the foundational benchmark 
+before introducing textual and visual modalities.
+
+Data Source:
+- Melbourne housing transaction dataset (2013–2015)
+- Filtered top 1% price outliers and missing values
+- One-hot encoded categorical property types
+
+Features Used:
+- Numeric property attributes (e.g., bedroom, bathroom, parking)
+- Derived features: bed-to-bath ratio, age at sale
+- Final feature count: 3 (after RFECV feature selection)
+
+Modeling Approach:
+- StandardScaler applied to numeric features
+- 80/20 random train/test split (random_state=42)
+- Models trained:
+  • XGBoost Regressor
+  • Random Forest Regressor
+  • Gradient Boosting Regressor
+- Hyperparameters inspired by MHPP paper
+
+Results (MAE / RMSE):
+---------------------------------------------------
+XGBoost:         $205870 / $294527
+Random Forest:   $203867 / $292549
+Gradient Boosting: $204131 / $293032
+
+Diagnostics:
+- Diagnostic plots for each model saved as: *_diagnostics.png
+- SHAP feature importance saved as: shap_feature_importance.png
+
+Next Steps:
+- Compare with text-only and image-enhanced models
+- Conduct ablation on feature combinations
+- Document final multimodal fusion results
+
+Author: Diya Gangwar
+Date: April 2025
