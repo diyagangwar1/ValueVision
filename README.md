@@ -9,9 +9,9 @@ Key Features:
 
 📊 Uses structured features (e.g., rooms, location) alongside unstructured data
 
-📝 Incorporates SBERT-encoded textual descriptions of property listings
+📝 Incorporates BERT-encoded textual descriptions of property listings
 
-🖼️ Extracts visual embeddings from property images using CLIP
+🖼️ Extracts visual embeddings from property images using CNN
 
 📈 Evaluates model performance using MAE and RMSE, with error analysis
 
