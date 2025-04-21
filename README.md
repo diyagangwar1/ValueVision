@@ -8,8 +8,13 @@ Leveraging BERT for text embeddings and CNN for image features, the model integr
 Key Features:
 
 📊 Uses structured features (e.g., rooms, location) alongside unstructured data
+
 📝 Incorporates SBERT-encoded textual descriptions of property listings
+
 🖼️ Extracts visual embeddings from property images using CLIP
+
 📈 Evaluates model performance using MAE and RMSE, with error analysis
+
 🧪 Modular codebase for experimenting with multimodal feature fusion
+
 Dataset: Real estate transaction data from Melbourne, Australia (2013–2015)
