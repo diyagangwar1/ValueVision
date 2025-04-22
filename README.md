@@ -27,10 +27,10 @@ Dataset: Real estate transaction data from Melbourne, Australia (2013–2015)
 This model was fine-tuned on real estate listing descriptions to predict house prices using DistilBERT.  
 It serves as the **text-only baseline** in our multimodal house price prediction pipeline.
 
-📦 **Download model:**  
+ **Download model:**  
 [model.safetensors (via GitHub Release)](https://github.com/diyagangwar1/ValueVision/releases/download/v1.0-text-only-model/model.safetensors)
 
-📥 **How to load it in code:**
+ **How to load it in code:**
 
 ```python
 from transformers import DistilBertTokenizer, DistilBertForSequenceClassification
